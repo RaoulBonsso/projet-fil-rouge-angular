@@ -1,4 +1,3 @@
-<div class="course-card" *ngFor="let course of courses">
-  <h2>{{ course.name }}</h2>
-  <p>{{ course.description }}</p>
+<div class="courses-container">
+  <app-course-card *ngFor="let course of courses" [name]="course.name" [description]="course.description"></app-course-card>
 </div>

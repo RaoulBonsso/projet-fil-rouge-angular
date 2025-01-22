@@ -1,34 +1,8 @@
 .courses-container {
   display: flex;
-  justify-content: flex-start; 
-  overflow-x: auto;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 15px;
   margin: 20px;
-}
-
-.course-card {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 16px;
-  margin: 10px;
-  min-width: 200px;
-  flex: 0 0 auto;
-  text-align: center;
-  background-color: #f9f9f9;
-  transition: transform 0.2s;
-}
-
-.course-card:hover {
-  transform: scale(1.05);
-}
-
-@media (max-width: 768px) {
-  .course-card {
-    min-width: 150px;
-  }
-}
-
-@media (max-width: 480px) {
-  .course-card {
-    min-width: 120px;
-  }
+  overflow-x: auto;
 }
