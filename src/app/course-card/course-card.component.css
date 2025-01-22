@@ -1,40 +1,46 @@
 .course-card {
   border: 1px solid #ccc;
-  border-radius: 8px;
+  border-radius: 5px;
   padding: 16px;
-  width: 200px;
-  background-color: #f9f9f9;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  margin: 10px;
   transition: transform 0.2s;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  overflow: hidden;
-}
-
-.course-card h3,
-.course-card p {
-  margin: 0;
-  text-align: center;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  flex-grow: 1;
-  min-height: 1.5em;
+  background-color: #f9f9f9;
 }
 
 .course-card:hover {
   transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-  .course-card {
-    width: 150px;
-  }
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
 }
 
-@media (max-width: 480px) {
-  .course-card {
-    width: 120px;
-  }
+.edit-button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+  background-color: #45a049; 
+}
+
+.delete-button {
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #e53935;
 }

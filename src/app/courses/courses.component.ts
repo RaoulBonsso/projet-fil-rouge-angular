@@ -17,8 +17,12 @@ export class CoursesComponent {
   newCourse: Course = { name: '', description: '', duration: '' };
 
   addCourse() {
-    this.newCourse.isNew = true; 
+    this.newCourse.isNew = true;
     this.courses.push({ ...this.newCourse });
-    this.newCourse = { name: '', description: '', duration: '' }; // Réinitialiser le formulaire
+    this.newCourse = { name: '', description: '', duration: '' };
+  }
+  editCourse(index: number) {
+    const course = this.courses[index];
+    console.log('Modifier le cours:', course);
   }
 }
