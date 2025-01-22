@@ -8,5 +8,5 @@ import { Component, Input} from '@angular/core';
 export class CourseCardComponent {
   @Input() name!: string;
   @Input() description!: string;
-
+  @Input() duration!: string;
 }

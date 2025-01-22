@@ -1,3 +1,24 @@
+<div class="card">
+  <h2>Ajouter un Cours</h2>
+  <form (ngSubmit)="addCourse()">
+    <div class="form-group">
+      <label for="name">Nom:</label>
+      <input type="text" id="name" [(ngModel)]="newCourse.name" name="name" required>
+    </div>
+
+    <div class="form-group">
+      <label for="description">Description:</label>
+      <input type="text" id="description" [(ngModel)]="newCourse.description" name="description" required>
+    </div>
+
+    <div class="form-group">
+      <label for="duration">Durée:</label>
+      <input type="text" id="duration" [(ngModel)]="newCourse.duration" name="duration" required>
+    </div>
+
+    <button type="submit" class="btn-add">Ajouter le Cours</button>
+  </form>
+</div>
 <div class="courses-container">
-  <app-course-card *ngFor="let course of courses" [name]="course.name" [description]="course.description"></app-course-card>
+  <app-course-card *ngFor="let course of courses" [name]="course.name" [description]="course.description" [duration]="course.duration"></app-course-card>
 </div>
