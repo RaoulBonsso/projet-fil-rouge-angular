@@ -1,0 +1,6 @@
+{
+  "courses": [
+    { "id": 1, "name": "Angular Basics", "description": "Introduction to Angular", "duration": "3 heures" },
+    { "id": 2, "name": "Advanced Angular", "description": "Deep dive into Angular", "duration": "5 heures" }
+  ]
+}

@@ -9,5 +9,5 @@ export class CourseCardComponent {
   @Input() name!: string;
   @Input() description!: string;
   @Input() duration!: string;
-  
+
 }
